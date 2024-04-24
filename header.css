@@ -1,0 +1,102 @@
+/*
+ *	Grid
+ */
+ .row, .row-main {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+.row:after, .row-main:after, .row:before, .row-main:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.row-main {
+    margin: 0 auto;
+    width: 980px
+}
+
+/*
+ *	Base layout
+ */
+#header {
+    position: relative;
+    z-index: 20
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    top: 33px;
+    font: 100%/1 'Gotham', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+/*
+ *	Menu
+ */
+#menu-main {
+    position: absolute;
+    right: 0;
+    top: 39px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#menu-main ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-main li {
+    float: left;
+    display: inline;
+    margin: 0 0 0 40px;
+    padding: 0;
+    background: none;
+}
+
+#menu-main a {
+    display: block;
+    color: #766A5D;
+    text-decoration: none;
+}
+
+#menu-main a:hover, #menu-main a.active {
+    color: #000
+}
+
+#menu-main strong {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    background: #ff9515;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.intro .inside {
+    padding-top: 85px;
+}
+
+.intro .preorder {
+    margin-bottom: 30px !important;
+}
+
+.box-social iframe {
+    vertical-align: top;
+    margin-right: 15px;
+}
+ 

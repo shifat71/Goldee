@@ -1,0 +1,908 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Goldee - Smart Light Controller</title>
+    <meta name="description" content="Goldee redefines how people interact with light. Replace your old light switch with a smart light controller. Join the revolution.">
+    <meta name="keywords" content="Goldee, smart light controller, smart light, intelligent light, smart light switch, gesture control, smart LED, lifx, ilumi, philips hue">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="./fonts.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico"/>
+
+ 
+    <link rel="image_src" href="./images/facebook2.png"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="./awwwards.css"/>
+    <meta property="og:image" content="./images/facebook2.png"/>
+      
+</head>
+<body> 
+ 
+
+<div id="awwwards" class="left black">
+    <a href="http://www.awwwards.com/best-websites/goldee-smart-light-controller" target="_blank">best websites of the
+        world</a>
+</div>
+
+
+<div class="cookies-notify">
+    <div class="cookie-wrap clearfix">
+        <span class="text">We use cookies to provide you with a better service. Carry on browsing if you’re happy with this, or find out more in our <a href="http://www.iubenda.com/privacy-policy/869176" class="iubenda-nostyle no-brand iubenda-embed link" title="Privacy Policy">Cookie Policy</a></span>
+        <span class="symbol"></span>
+    </div>
+</div>
+
+
+<style>
+
+    iframe[name^="google"] {
+        display: none;
+    }
+
+    .cookies-notify {
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: -70px;
+        background: #262729;
+        color: #808080;
+        font-family: 'Gotham A', 'Gotham B', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        z-index: 100;
+        cursor: pointer;
+        -webkit-transition: background-color .6s ease-in-out; /* For Safari 3.1 to 6.0 */
+        transition: background-color .6s ease-in-out;
+    }
+
+    .cookies-notify:hover {
+        background: #2d2e30;
+    }
+
+    .cookie-wrap {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .cookies-notify a {
+        color: #808080;
+        text-decoration: underline;
+        line-height: 52px;
+    }
+
+    .cookies-notify .symbol {
+        display: block;
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin: 11px 0;
+        background: url("./images/x.png") center center no-repeat scroll #606060;
+        border-radius: 100%;
+        -webkit-transition: background-color .6s ease-in-out; /* For Safari 3.1 to 6.0 */
+        transition: background-color .6s ease-in-out;
+    }
+
+    .cookies-notify:hover .symbol {
+        background-color: #b3b3b3;
+    }
+
+</style>
+
+
+<div id="header">
+    <div class="row-main">
+        <h1 id="logo">
+            <img width="71" height="47" src="./images/logo-goldee-02.png" alt="Logo"/><strong>Goldee</strong>
+        </h1>
+
+        <div id="menu-main">
+            <ul class="reset">
+                 <li><a href="./jobs.html">Jobs <strong>3</strong></a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="mailto:hello@getgoldee.com">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="intro">
+    <div class="inside">
+        <h2 style="margin: 139px 0 54px 0">Goldee Light Controller</h2>
+
+ 
+
+        <a href="./preorder.html" class="preorder" style="margin-bottom: 73px">Preorder now</a>
+
+        <div class="box-social">
+            <a href="https://twitter.com/getGoldee" class="twitter-follow-button" data-show-count="false">Follow
+                @getGoldee</a>
+            <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');</script>
+     
+    </div>
+
+        <a href="#" class="partnership"></a>
+
+        <!-- 	  <div class='progress-data'>
+                <div class='data backers'><span></span></div>
+                <div class='data money'><span></div>
+                <div class='data end-days'><span></span></div>
+              </div>  -->
+
+     
+        <div class="controller controller-in-intro">
+            <div class="sunset"></div>
+        </div>
+    </div>
+</div>
+
+<div class="reviews">
+    <div class="inside">
+        <a target="_blank" href="https://venturebeat.com/2013/11/27/goldee-brings-nest-like-control-to-your-dull-old-light-switches/" class="review review1">VentureBeat</a>
+        <a target="_blank" href="https://techcrunch.com/2013/11/26/goldee-smart-light-controller/" class="review review2">TechCrunch</a>
+        <a target="_blank" href="https://finance.yahoo.com/news/goldee-reveals-world-smartest-light-154800227.html" class="review review3">YAHOO Finance</a>
+        <a target="_blank" href="https://freshome.com/2013/11/22/reinventing-light-switch-futuristic-goldee-light-controller-video/" class="review review4">Freshome</a>
+        <a target="_blank" href="https://www.crowdfundinsider.com/2013/11/27263-goldee-worlds-smartest-light-switch-crowdfunding-now/" class="review review5">Crowdfund Insider</a>
+    </div>
+</div>
+
+<div class="visualizations">
+    <div class="visualization-bgs">
+        <div class="bg group1 night show"></div>
+    </div>
+
+    <div class="inside">
+        <h2><span>Intelligent</span> light that<br> caters to you.</h2>
+
+        <div class="roles hide">
+            <a href="#" class="role role1 selected" data-bgchange="ambient">ambient<br> light scenes</a>
+            <a href="#" class="role role2" data-bgchange="on">turn<br> lights on</a>
+            <a href="#" class="role role3" data-bgchange="off">turn<br> lights off</a>
+        </div>
+    </div>
+
+    <div class="controller-hover">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle pulse-circle-second"></div>
+    </div>
+
+    <div id="left-room-lighten" class="room lighten-room hide"></div>
+    <div id="right-room-lighten" class="room lighten-room hide"></div>
+    <div class="room room-hover room-hover1 hide" data-room="left"></div>
+    <div class="room room-hover room-hover2 hide" data-room="right"></div>
+
+    <div class="dots">
+        <a href="#" class="dot active" data-group="night" data-text="<span>Intelligent</span> light that<br> caters to you."></a>
+        <a href="#" class="dot" data-group="outside" data-text="Hundreds of <span>light scenes</span><br> for unforgettable moments."></a>
+        <a href="#" class="dot" data-group="ambient" data-text="Amaze yourself with <br>touch-free <span>gesture control.</span>"></a>
+    </div>
+</div>
+
+<div class="timeline">
+    <div class="timeline-bg timeline-bg1 show"></div>
+    <div class="timeline-controller">
+        <div class="mode-icon mode-icon1 show"></div>
+    </div>
+
+    <div class="inside">
+        <div class="vertical-line vertical-line1"></div>
+        <div class="clocks">
+            <div class="time">
+                <span class="hours">5</span><span class="colon"></span><span class="minutes">30</span>
+            </div>
+            <span class="forenoon">AM</span>
+        </div>
+        <div class="vertical-line vertical-line2"></div>
+
+        <div class="modes">
+            <p class="mode mode1" data-bg="1">
+                A day with Goldee begins with a tranquil <b>Sunrise Alarm.</b>
+            </p>
+
+            <p class="mode mode2" data-bg="2">
+                <b>Smart Off</b> turns your lights off when you leave home.
+            </p>
+
+            <p class="mode mode3" data-bg="3">
+                <b>Smart On </b> illuminates your lights upon your arrival.
+            </p>
+
+            <p class="mode mode4" data-bg="4">
+                For extra comfort, Goldee works with a <b>smartphone</b> as well.<br>
+                <img src="./images/apple.png" alt="apple">
+                <img src="./images/android.png" alt="android">
+            </p>
+
+            <p class="mode mode5" data-bg="5">
+                <b>Sleep Timer</b> gradually fades your lights and prepares you for sleep.
+            </p>
+
+            <p class="mode mode6" data-bg="6">
+                <b>Night Mode</b> turns dim light on to help you get around at night.
+            </p>
+
+            <p class="mode mode7" data-bg="7">
+                <b>Smart Security</b> simulates your presence while you are gone.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="tech-spec">
+    <div class="inside">
+        <h2>Engineered to impress.</h2>
+
+        <div class="part part3"></div>
+        <div class="part part2"></div>
+        <div class="part part1"></div>
+
+        <div class="dots-with-circle">
+            <div class="dot-with-circle dot-with-circle1" data-hover="1">
+                <div class="dot"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dot-with-circle dot-with-circle2" data-hover="2">
+                <div class="dot"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dot-with-circle dot-with-circle3" data-hover="3">
+                <div class="dot"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dot-with-circle dot-with-circle4" data-hover="4">
+                <div class="dot"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dot-with-circle dot-with-circle5" data-hover="5">
+                <div class="dot"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dot-with-circle dot-with-circle6" data-hover="6">
+                <div class="dot"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dot-with-circle dot-with-circle7" data-hover="7">
+                <div class="dot"></div>
+                <div class="circle"></div>
+            </div>
+
+            <div class="description description1">
+                <div class="line-container">
+                    <div class="connection-line"></div>
+                </div>
+                <div class="description-content">
+                    <h4>Gorilla® Glass</h4>
+
+                    <div class="hor-line-container">
+                        <div class="line"></div>
+                    </div>
+                    <p>Although you never have to touch it, Goldee's faceplate is engineered from Gorilla Glass –
+                        ensuring extra durability and scratch resistance.</p>
+                </div>
+            </div>
+            <div class="description description2">
+                <div class="line-container">
+                    <div class="connection-line"></div>
+                </div>
+                <div class="description-content">
+                    <h4>Gesture Control Chip</h4>
+
+                    <div class="hor-line-container rot">
+                        <div class="line"></div>
+                    </div>
+                    <p>An innovative chip that responds to your gestures, allowing you to control your lights with the
+                        wave of your hand.</p>
+                </div>
+            </div>
+            <div class="description description3">
+                <div class="line-container">
+                    <div class="connection-line"></div>
+                </div>
+                <div class="description-content">
+                    <h4>Ambient Sensor</h4>
+
+                    <div class="hor-line-container rot">
+                        <div class="line"></div>
+                    </div>
+                    <p>Continuously monitors the light conditions in the room to ensure optimal brightness of your
+                        lights.</p>
+                </div>
+            </div>
+            <div class="description description4">
+                <div class="line-container">
+                    <div class="connection-line"></div>
+                </div>
+                <div class="description-content">
+                    <h4>Amoled Display</h4>
+
+                    <div class="hor-line-container rot">
+                        <div class="line"></div>
+                    </div>
+                    <p>The true black of our AMOLED display gives a beautiful frameless design without distractive
+                        edges.</p>
+                </div>
+            </div>
+            <div class="description description5">
+                <div class="line-container">
+                    <div class="connection-line"></div>
+                </div>
+                <div class="description-content">
+                    <h4>Proximity Sensor</h4>
+
+                    <div class="hor-line-container">
+                        <div class="line"></div>
+                    </div>
+                    <p>It notes when you are around and depending on the context it responds with the suitable smart
+                        function.</p>
+                </div>
+            </div>
+            <div class="description description6">
+                <div class="line-container">
+                    <div class="connection-line"></div>
+                </div>
+                <div class="description-content">
+                    <h4>Polycarbonate body</h4>
+
+                    <div class="hor-line-container rot">
+                        <div class="line"></div>
+                    </div>
+                    <p>A thin yet durable polycarbonate body gives Goldee a sleek and minimalistic design.</p>
+                </div>
+            </div>
+            <div class="description description7">
+                <div class="line-container">
+                    <div class="connection-line"></div>
+                </div>
+                <div class="description-content">
+                    <h4>Back Panel</h4>
+
+                    <div class="hor-line-container rot">
+                        <div class="line"></div>
+                    </div>
+                    <p>Covering all wiring and power supply, the back panel is an elegant base to secure Goldee to your
+                        wall.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="works-with">
+    <div class="inside">
+
+        <h2>Goldee works with</h2>
+        <img class="bulb-company" id="lifx" alt="lifx" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK0AAABVCAYAAAA7bmQ3AAAjPUlEQVR42u2deXgV5dmH3+wLYBARkSIgCEoggEAUMRAUl4qCa10raFmsgAKKIO5axYIKKNQNa+uKu1StUi1ai1ZF69pirVq11q0tSBWV5dL5fvd78sbJZGbOCeRAPp0/nuskZ5mZc+ae5332MS+99JKJktdee8384Q9/MFdddZW55JJLzK9//Wvzl7/8xVx66aXmzDPPNBMmTDDnnHOOmTlzpnnyySfNokWLzN13323Gjx9vrrjiCnP77bebX/7yl2ynz09+8pOB11xzzZKRI0c+3qdPn5cHDRrkde/e3evYsaO33Xbbedtuu63Xpk0bK23btvU6derklZeXe4MHD/b69ev38qhRox5fsGDBknPPPXegpO0Pf/hD88c//tHMnz/fnHbaaebAAw80v/jFL8zy5cvNvHnzao9x1qxZRvs177zzjrnzzjvt33wPjvdvf/ub/T5R4nleIk1QTGNDe99995kzzjjD3HjjjR30/vknnHDC0oMOOshr166d9mY2WXbaaSevV69eK/fZZ5+FgnD+bbfd1uG8884zw4YNM4I6gTaBNjNoee2pp54yv//9783DDz88Tlr1iurq6vVbb711JHw5OTlW3N/B5/z/+59zkp+f7zVr1swbOnTo+p/+9KdXHH300V2A8s9//rOZO3duAm0CbTS0Z511lgXhhRdeGHX66ae/zpIOUBurScMATfdaXl6e17lz5y+mTp36+l//+tdRHCfHm0CbQFsH2unTp5tJkyZhBux00kkn3TxgwIA6IOXm5jaKOdBQqaqq8qZMmXLzPffcs5NsX3usCbQJtPbv2bNnm1NOOeVg2ZIbgtoQYDc3tMH9HXLIIRu0ChyMI4iDlkD7PYUWAN5++21z0003bYM33759+3rgsFRvCWjD7N8OHTp4urAef/DBB7f5+OOPbTQjgfZ7BO3PfvYzc//993OiT5LTszIKmDjnKSgFBQUe4Hfr1s3r3bu317dvXyIDXteuXW20gQugMWzfsWPHrvzggw9OWrJkiY0wJNB+D6AlhMTJfuCBB8YRX40DxZkHYUs2gPbs2dPbe++9l0lbL5PjdP4ee+xRKfu4UvHWyuuvv75Snn+lnq/s379/pWzm82+44YZlikQsq6ioqBc2cxodCYLqPw5k3333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">
+        <img id="ilumi" class="bulb-company" alt="ilumi" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAAAvCAQAAADnJ/YsAAAI4UlEQVR42u2ca3QV1RWAvxDeGJZgFRY1ICLUAgVklZfyrKQIBZEiDykiyKuuBdgCwQUE1DYhD94BQqSgCOGtQhavRYBFitYSQmioRJtUaLEQpQUkWrRo7fRHTiZz7tlzc+/NTde9t57zZ2b2Pnv2zJc7c/beZwKh3oZTzHmtl7CCiGmW2EOpxbGVM5zhDYY6jj4neH0sLAmMZS8FnGYzj4QPltWaX1n28WcEr/eEHZJ6HNauIDX4WOrQk8lMoif1g+Z2suHZ1ojCcsC4hoTgYnmBEnv0BRYFxekHRN/6RAyWgeL1tQgMy6Ms5QS7ecLxOzluWDhBA1vekRc5TDYL6OSX2/Gib+kRg+U18fqm+Y+lLTkOrYrfxB7Rxl4lnaIdXe2H25mi3UMRg+WYeH0r/cXSk8889NoBfV1sWPQWpTlE+ej2ctHqzojBsl+8vpd9w7KASQC04JahNxdY64plLbBDOL4DiGIq7atwe4Ro9fmIwbJQvL4f+4JlAxYW9YG9gl4ScNAVyy7giChpQ1csbvNwFdPHvxojv6RpxGBpLlzDB+XPEu9YZmBhcZto7hb1fgZsc8Wy2eXXYrGUIVhYfMV9Xh1/iG88Rv4koibIo4w/uk5VT5Cb2RNemCZo3aaJ8Up39inAOFGSSye1lV+F4z/kXXtUEYMjLJyEx/nA9v8kP/AlnMxQe5nAOkGrPPS5g8uijU+oD0RxUZC9B/xBbY+q0vWHmcRU+mvHIgUL1GIAU5lEL99yYk35Su11BVIMnaO2jW78R7BR8d7owr/FGzhLbRcHdDGRg8XPVOV4+4ED0N64BXW0R02+Jj1LD4e0H2UeozsCDfjUA+C3WHzAst5xC8ufgpfsv+8ZgqVhZLCf/WQyzJDdSwY31ei/MEIdfUodWfItFgkLzejAvXSiJTEWxNAM4CgWFvHahDWOMfTwORzU2510Zzj9tF/ZJiwsDoQllgY0pBG1q9CKoTl3USsgLE9Swg32UUiJBSUUACRxjcV+zsO70IVYv8akcoWFLrI7mE8Kv3L0ZBYSUyWWaSzTRiWSQmvB/s9Zquklkawm7A+SSqImW8ZENao2w9jAu1ymlI+5SDaLaStY/xHpnOLvfM0/KeFNpnOnh8Z3SWKJdpY0ZjqwRDOSj6jLZiwmqImS0IayjRwOEk9LQzaAfepdcYsc4THWi1fJ5z2OMdpnZC3EB2zLKrFIM8Mhgv2PBb1BAIwVJCUATHRkyiv7N6znHi1NdULQKlUZior2iKDzufPdQm8KLXiBS5RRSjbqpd/NiPctdetnaidIMsxnavKlmmyDltpZThMXLM24YdgtK098e8WSJ8gGCPbPCHp91XvSlGwDtrjGaBalPKTsPu9Fa6s2UTLl72tYhlNmwQaysSjgHYC3tb+yVDkBDcAi0YHXbPk8Q5aiJC8pV2q5YLlujLzpA5ZTPmLJ9wvL2/zWy+22sPiC+4DZVWile8VSpGFpy2wLRvAoT/E4UyrThFepAzwoniBWnDpX9sFarsCcIt9lxzs/DQMsvvSTPOGDVi9fsZgT5Nft7TggTdRKAmCz6+nLI545omwTMFLLKUcCFt/6rsCx5GnJ+1yXvw2I5iMvP+rGwFui7CLwC3vv/P8VlmuqchsAliJ7Ow0odr219fjciwOdXWtwV7WncKm4LCM0sVzgPP+q8tYXkedFq0OgWN63t9doe85eDNQ1Kpaeb5AjLolMZ63+b9QLCyynVTjcRpgCVfZ36A1AG5dqvcXAQLEU2NuJwD5R6zgQxZ9c3fuMBsArouycNpEsDIuH2Dktpn/J5arPaueQi4RjA8WSZW9PdAmvLBWdL3fFkq1WykiyFGCAvbc7LLD08Rh/RdTqqul0FnXGB4pllDYNjhJi26/5jkpDumGpCK9OusTqtfmH2hsXBlhuGNHVHpdKkt6uClrjAsUSrUBk2Gu9PMu3leWr8V5+S+W5slIP2S+VZLh6R9ULAyynjfFSaTDLp1xCwFggltdZ5cgWd+eCLb/ESO3Uk/jCw8I8TX4Pe2ysn2plgYHMVYsmQh1LjjH+ZUEr1dA6FFwsZmvIZFaSyGgaGrL7SaKAa9ykkNXi6sm2TGAmE7jb51RlaGE5aoxf5PLO1NtbwcUygyIW+FkmqO33svA+7LDLYjWJpb9gP88vLOZnGi8KWmmGVnZwsWRXLr1UrRMJLGOOVhD2vX2PWSSzkC6OY905Qn7FKvUaxdK32hnkEMGSqLYr/pafdch/Rz+Pk8eSxjlucYsrbFdVC2dBa5PgehO28SaHmPw/wDLUx3pL/1DH0lNtX6c+0NHQGeM49XhjEYWz3tLKmF7Hq+rgMTZyWHzuVweL9M74tWG9teu66ZDGgn0zZ7nkiSseZoNEG68qaV0+FJJ1EMNOstjBFqOYWl0suWKRynMSvlH0un3oY5lgr4uVQ8IPiQbqiwFT5QMhVVyPCYM4wm/IYXrQZ2JZojf5tHMsmVss6txWk/WQxgKFar8120W9EcBo1yh/N1BPWOdvcY1oZpPNTnZpNfDgYJnr4s9tdrGAmWS4ZMQrc3MhjqWdPT8Z51rMcs+J/Rno7vLpUBTp7CKX4TUQt7QPuBKSFh5Y4DGVpKsr6h1E+uzUmfgfLEqeBLZQyOwaCScRPhr0rbcLFyzQjXk0BhIEvUyt9Ct9XiR9llqg0i5P11CUD98PCMpyxwrRkMdS2baI1cdGws1zJjx+73H0Mq1qOPkCMNlvKHnawt0wwgIJjkJomZ2uHOL60VF5jc4Z0xygeY3nxMrbdL+g5NAofLFAK+LZxhskaItan+ZLDwvrtSTlK5znj2y0v+WqzqrKWJWxk5d8OFsPl3UE5lKQ+R4jx7jfMEdbJWhtNLROuX3kLa6qLAsMi1u7n1TOcp2bFJOlYuXqthgSSWeFo69mCY3VG2+tJlnBOp4RbMSxm0+8IDnDfGHVdAfSWelh/TlDaxDrDB/MZb7PemitZI2qYMayilWabE1FQSS4//OlGS2IDrmvEpoSxxw2sZdcjnOcXA6znWRG0TmUP6Qw+38BeYC69U8YueQAAAAASUVORK5CIIA=">
+        <img class="bulb-company" id="philips-hue" alt="philips hue" src="data:image/png;base64,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">
+    </div>
+</div>
+
+<div class="how-it-works">
+    <div class="inside">
+        <h2>Get started</h2>
+
+        <div class="steps">
+            <a href="#" data-content="replace" data-pointer="1"><h3 class="step step1 uk">1. Replace your old light
+                switch with Goldee <span class="goldee-switcher"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAMAAACdDFNcAAABuVBMVEUAAAD/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/pkb/uW7/uW//um//vnn/v3n/v3r/wX//woD/woH/xoj/xon/x4r/zJL/zJf/zZX/zpj/zpn/zpv/z5D/z53/z5//0JL/0Jr/0Jz/0KD/0KL/0ZT/0ZX/0Z3/0aT/05j/05r/1Zv/1Z3/1Z//1aH/1p//1qD/1qX/16L/16P/163/16//17D/17H/2KL/2KX/2K7/2K//2LL/2a//2bH/36//37H/377/37//4LH/4MP/4rn/47n/48f/48n/5cP/5s7/5s//58T/6ND/6NH/6NP/6cf/6dH/6dL/6sv/6tP/6tT/69b/7NL/7dH/7dz/7tz/797/8N//8OD/8+L/9Ob/9Or/9eb/9er/9ev/9ur/9uz/9u3/9+z/9+7/+PD/+fH/+fP/+fT/+vX/+vb/+/b/+/f/+/j//Pj//Pn//Pr//Pv//fr//fv//fz//vz//v3//v7///7////fqfIzAAAAH3RSTlMABwgMISIjJCxVVleFhoeWmJnHyM7P5+jp6/P0+Pn6jFk2GgAAAyNJREFUaN612tdXE0EYxuGPhESKhCQUE5L1RYo0G/bee0OxYVdUEFBBFMWuFGHjkkH+Yi8wYWsysN+8d3vznN/J2ezNDFF+wfLqeCINX0sn4tXlQXKuNNrgT15ZQ7TUhpdENKC1d+Tb/JLX/lq36Lrfn4d7WgEtUmLWQ7VA5/hSgUnhi4tCCCHGOoG60IpeVo+moSX/ushtsAn1ZTk9XI/2Oa705c20oT78/3evRTtn+vLaUBsgIqIqNM2xpgshhJhtRBURUSiNIe50IYQYgBYmoii6FOBCiC7EiIIpjCvRxVukglSJViW4EKIVlRTDDUW66EWU4hhRgwsxjDgl8V2RLr4hSWnMq8GFmINGgCo9mwVceB5cZLMLbjxX+sKCC8+X7sYzpjt51nQHz5tu47nTrTx7upnnwi16nleRnufVpOd4RemuPF+6C7/ImO7kWdPtPHO6jedOt/D86WZeQfoKryQ9zyvCDQMgQJlegGfAvfliuJzuxfPgHjxTugfPhrvxftMNoxDPmO7kWdMdPG+6jedOt/Ls6WZeQbqJV5Ge59Wk53hF6ZL8WtOl+LWnG5lMMT7rIz1TlPeVXoz3mV6E95tekPefnsnonjxDekb34lnSdS+eJ92D50p359nS3XjGdBeeM93B+8Bd0u08c7qVZ0+38PzpJl5F+gqvJD3HK0rP875xD32Zl9e/3r+yc8/xvndyeHHeGvvi9N7u65f3bzv2Uk7XAdIwK6f/6DvV/cAwDOPZ1qMfZHB9Chol8UUC//T66fmzuyeWHx5vuSmj65NIUg2GJdJv79tx8c6f3NOBQxK4rg8iTjFcW/ULc+SgBK7rPYhRJVpW+0d6sv2WjK43o5KCKYyt7l1/vuvERwlcH0UqSBRDp7w+/fDupcPnXsnoeidiRBTSMCCd/ujqyTP33svgej82homIImic9v/5su9XIyJERBSoRbv/z5d9+eNgCifQNsWarv/cjA3rTEfxm/o50/sbTUfxRKE6oGOUK/1Nh/UiAVFgvQa09AxNzvhLn5oYvNAMaJGAykscIXIuWBGtSWj+ZC1RE60wXUH5B5sAZeLcbDbRAAAAAElFTkSuQmCC"></span>
+            </h3>
+            </a>
+            <a href="#" data-content="update" data-pointer="2"><h3 class="step step2">2. Update your regular light bulbs
+                with Smart LEDs</h3></a>
+            <a href="#" data-content="enjoy" data-pointer="3"><h3 class="step step3">3. Sit back and enjoy the
+                wonder</h3></a>
+        </div>
+
+        <div class="pointer-line">
+            <div class="pointer pos1"></div>
+        </div>
+        <div class="content-steps hide">
+            <div class="content-step replace hide">
+                <div class="switches"></div>
+                <h4>Goldee can replace any classical light switch</h4>
+
+                <p>Installing Goldee is a simple do-it-yourself project. It is like fitting any standard light switch.
+                    In very rare cases, installing a neutral wire may be required. Goldee Support will be happy to help
+                    you out should you run into any hiccups. If you feel uncomfortable swapping your light switch
+                    yourself, you can call a local electrician.</p>
+            </div>
+            <div class="content-step update hide">
+                <div class="possibility normal">
+                    <div class="bulbs"></div>
+                    <h4>Goldee can control your regular <br>bulbs as well</h4>
+
+                    <p>If you don't have enough smart LEDs or simply wish to keep some of your regular light bulbs,
+                        Goldee has it covered. Regular bulbs, however, can't create colorful light or perform smart
+                        functions.</p>
+                </div>
+                <div class="possibility smart">
+                    <div class="bulbs"></div>
+                    <h4>Use smart LEDs for colorful<br>and smart light </h4>
+
+                    <p>With smart LEDs you will gain access to our colorful light scenes and smart features—these are
+                        all the marvellous little things that your lights could not do until now. Goldee supports all
+                        smart LEDs, including LIFX, Philips hue, and ilumi.</p>
+                </div>
+            </div>
+            <div class="content-step enjoy hide">
+                <div class="controller">
+                    <div class="controller-text controller-text1"></div>
+                    <div class="controller-text controller-text2"></div>
+                    <div class="controller-text controller-text3"></div>
+                    <div class="controller-text controller-text4"></div>
+                    <div class="controller-text controller-text5"></div>
+                </div>
+                <h4>For today and for tomorrow</h4>
+
+                <p>Our light artists are continuously expanding Goldee’s Lighting Library with hundreds of exciting
+                    light scenes to enhance your relaxing, working, or romantic moments. Each light scene is a dynamic
+                    piece of art with ever-changing colors. Goldee is upgradable, so you can stay up-to-date with our
+                    newest light scenes and smart features. The adventure has just begun…</p>
+            </div>
+        </div>
+    </div> 
+
+    <footer>
+        <div class="footer-bgs">
+            <div class="bg bg1 show"></div>
+        </div>
+        <div class="inside subscribe">
+            <h2>Don't miss any update</h2>
+    
+            <h3>Subscribe to our newsletter for news, insights and other cool stuff.</h3>
+    
+            <form class="mailing-subscribe-form" action="#" method="get">
+                <input type="email" placeholder="Email me about news..." class="email-input" required="required" name="email">
+                <input type="submit" class="submit-button" value="Subscribe">
+    
+                <div class="mailchimp-message">Ooops. Something went wrong. Sorry. :/</div>
+            </form>
+    
+            <div class="bottom-socal-icons social-icons">
+                <a href="https://www.twitter.com/getGoldee" class="sicon sicon-tw"></a>
+                <a href="https://www.facebook.com/getGoldee" class="sicon sicon-fb"></a>
+            </div>
+    
+            <div class="goldee-ltd">
+                <div class="copyright">© Copyright Goldee</div>
+                <ul class="links">
+                    
+                    <li>
+                        <a href="./privacy.html" class="iubenda-nostyle no-brand iubenda-embed link" title="Privacy Policy">Privacy Policy</a>
+                      
+                      <script type="text/javascript">(function (w, d) {
+                            var loader = function () {
+                                var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
+                                s.src = "./iubenda.js";
+                                tag.parentNode.insertBefore(s, tag);
+                            };
+                            if (w.addEventListener) {
+                                w.addEventListener("load", loader, false);
+                            } else if (w.attachEvent) {
+                                w.attachEvent("onload", loader);
+                            } else {
+                                w.onload = loader;
+                            }
+                        })(window, document);</script>
+                    </li>
+                    <li>
+                        <a href="#legal" class="link legal">Legal</a>
+                    </li>
+                   
+                    <li>
+                        <a href="mailto:hello@getgoldee.com" class="link footer-contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+<img src="./images/on.jpg" style="position: absolute; visibility: hidden; width: 1px; height: 1px; bottom: 0; left: 0;">
+<img src="./images/off.jpg" style="position: absolute; visibility: hidden; width: 1px; height: 1px; bottom: 0; left: 0;">
+<img src="./images/ambient.jpg" style="display: none;">
+<img src="./images/night.jpg" alt="" style="display: none;">
+<img src="./images/light.jpg" alt="" style="display: none;">
+<img src="./images/outside.jpg" alt="" style="display: none;">
+
+<div class="nopreorderforyou">
+    <div class="outer">
+        <div class="middle">
+            <div class="wrapper subscribe">
+
+                <div class="turn-off"></div>
+
+                <h2>Notify me on availability</h2>
+
+                <p>We’re not accepting any pre orders at this time. Your interest in owning a Goldee controller matters
+                    to us. Leave us your e-mail and get notified on Goldee availability updates.</p>
+
+                <form class="mailing-subscribe-form" action="#" method="get">
+                    <input type="email" placeholder="Email me about availability…" class="email-input" required="required" name="email"/>
+                    <input type="submit" class="submit-button" value="Notify me"/>
+
+                    <div class="mailchimp-message">Ooops. Something went wrong. Sorry. :/</div>
+
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com/getGoldee" class="sicon sicon-tw"></a>
+                        <a href="https://www.facebook.com/getGoldee" class="sicon sicon-fb"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+<div class="legal-popup hide">
+<a href="#" class="cross"></a>
+
+<div class="container" id="legal">
+
+
+<div class="content-container">
+<h4>Terms and Conditions</h4>
+<hr>
+<p>These are the Terms &amp; Conditions of Sale (hereinafter referred to as "Terms") that apply between you as a Customer
+    and Goldee s.r.o. (a subsidiary of Goldee Ltd.) as a company registered in Slovakia with registered company number:
+    46966919 and registered office: Nemcovej 30, Kosice 042 18, Slovakia, European Union (hereinafter referred to as
+    "we"), when you purchase the Products listed as items for sale on our website (hereinafter referred to as
+    "Products").
+    <br><br>
+    Your purchase of the Products through our website shall be subject to these Terms and no other terms or conditions
+    shall apply. These Terms shall override any other terms or conditions referred to by the Customer or in any course
+    of dealing.
+    <br><br>
+    Please, read these Terms carefully. By ordering or purchasing the Products you agree to these Terms. If you do not
+    understand any of the Terms or do not accept any part of them, do not place an order or purchase the Products, or if
+    you already have the Products, return them in accordance with our Product Return Policy. If you have any questions
+    regarding these Terms, do not hesitate to contact us.
+</p>
+<h4>Order and Order Confirmation</h4>
+<hr>
+<p>By placing a Pre-Order, you make an offer to us to purchase the Products you have selected from the list of items for
+    sale on our website. You may place an Order by filling in the Order Form on our website, whereby you acknowledge
+    that your Order is binding. If you have any questions, please contact us.
+    <br><br>
+    You acknowledge that if the Products are not yet available and if we accept your Order, the Products purchased are
+    planned to be delivered to you next year.
+    <br><br>
+    We may accept or reject your Orders at our sole discretion. If we accept your Order, we will notify you of our
+    acceptance by issuing an Order Confirmation. If we do not accept your Order we will notify you of our rejection.
+    Generally, we have 15 days as of the receipt of your Order for acceptance or rejection thereof. However, this period
+    may be extended. By your receiving our Order Confirmation, a Contract between shall enter into force. Any Contract
+    shall be dependent and conditional upon a confirmation of both your Order and your credit card.
+    <br><br>
+    The information contained in our advertising, in other written materials or on our website shall constitute an
+    invitation to treat. No such information shall constitute an offer by us to supply any of our Products.
+    <br><br>
+    We maintain records of Orders and Order Confirmations and retain these for a reasonable period following a delivery
+    of the Products. We recommend that you should retain a printed copy of these Terms along with a copy and/or note of
+    your Order, Order Confirmation, payment method acceptance and invoice as evidence of a particular purchase.
+    <br><br>
+    We reserve the right to withdraw from a Contract, i.e. the right to cancel or reject any Order for any reason at any
+    time prior to the shipment of the Products, including the period after an Order has been confirmed by us. In such a
+    case we shall contact you to inform you that all or a portion of your Order has been cancelled. If we withdraw from
+    a Contract, we shall refund you the whole price you paid for the Products. You acknowledge and accept that you shall
+    not raise any other claims.
+</p>
+
+<h4>Your status</h4>
+<hr>
+<p>
+    By placing an Order, you warrant that you are at least 18 years old and you are legally capable of entering into
+    binding contracts.
+    <br><br>
+    You are solely responsible for (i) providing true, accurate, current and complete information about you as prompted
+    on our website or as requested by us, and (ii) maintaining and promptly updating this information by notifying us to
+    maintain its accuracy, currency and completeness.
+
+</p>
+<h4>Product information and availability</h4>
+<hr>
+<p>
+    We may update, revise and/or discontinue the Products listed as items for sale on our website at any time. We may
+    revise the prices of the Products listed as available items for sale on our website at any time. A particular price
+    shall remain valid only throughout the day on which the Customer visits our website displaying that price. We shall
+    do our best to make sure that there are no mistakes in the Products prices that appear on our website. Should a
+    mistake occur despite of our efforts, you agree that we shall not be bound by that incorrect price, unless your
+    credit card has already been charged. If a mistake is discovered and you have not been charged yet, we will let you
+    know the correct price and you will be given an option either to accept the correct price and continue in a Contract
+    or to cancel your Order.
+    <br><br>
+    The Products are not currently available. We plan to start producing them from the next year, if Customers order the
+    Products in a total price exceeding $ 100.000 until December 20, 2013. Otherwise, i.e. if we do not reach the goal
+    of raising $ 100,000 by this date, Customers shall be entitled to claim the refund of the full price they paid for
+    the Products to us.
+    <br><br>
+    The Products availability may be changed and different Products may have different availabilities. We reserve the
+    right to prioritise Orders and to allocate a limited stock between Orders as we may deem fit.
+
+</p>
+
+<h4>Price and taxes</h4>
+<hr>
+<p>
+    The prices of the Products are those, which apply at the time of Customer’s placing an Order.
+    <br><br>
+    Shipping or handling costs, transport insurance, VAT (or other revenue tax), duty and other taxes, levies or charges
+    of any authorities may be charged in addition to the applicable Products price. In such a case we shall contact you
+    by email to inform you about the amounts of these charges.
+
+</p>
+
+<h4>Payment methods and terms</h4>
+<hr>
+<p>
+    We accept payment by approved credit cards. Other payment methods (e.g. PayPal) are not currently possible.
+    <br><br>
+    You must tender payment (via an accepted credit card) after we accepted your Order (before the delivery of the
+    Products). For credit card payments, you must provide your valid credit card number and other requested details,
+    which we require in an Order. We will charge credit cards upon Order placement, once we accepted your Order.
+    <br><br>
+    You acknowledge and agree that the business transaction is a deposit for an obligation with captive use to meet the
+    obligation. The funds shall be managed in a manner to fulfil the obligation.
+
+</p>
+
+<h4>Shipping and Delivery</h4>
+<hr>
+<p>
+    As soon as the Products are produced we undertake to deliver them promptly to the Customers who purchased the
+    Products. We intend to start shipping the Products from summer 2014. We shall contact and inform our Customers in
+    due time. However, there may be reasons for our inability to ship according to our target dates. Accordingly, any
+    dates given by us for the delivery of the Products are estimates only, and we cannot and do not undertake that
+    delivery will occur on any specified dates, except in the event such delivery dates have been explicitly confirmed
+    by us as binding.
+    <br><br>
+    We will use our discretion in selecting a reputable carrier and appropriate means of delivery. We may also agree
+    with the Customers on the method of delivery.
+    <br><br>
+    If the Products cannot be successfully delivered by any estimated or target dates given by us, we may elect to
+    cancel the Order and refund all the money paid by the Customer to us.
+    <br><br>
+    If the Products cannot be successfully delivered because the Customer has provided incorrect or incomplete delivery
+    information, or the Customer has refused deliveries, the Products will be returned to us. In such a case the
+    Customer shall be liable for any charges related to shipping. The Products may be re-delivered, but the Customer
+    shall pay all the charges related to the shipping.
+    <br><br>
+    If you do not receive your Products, please contact us.
+
+</p>
+
+<h4>Title</h4>
+<hr>
+<p>
+    A title to the Products shall pass unto you on the moment of handing the Products over to the freight carrier. We
+    shall not be liable for any Products loss or damage that may occur when the Products are in transit to you. If you
+    are interested we may insure the Products at your cost.
+    <br><br>
+    A title to any software comprised, included in or with Products shall remain with us, notwithstanding the payment.
+
+</p>
+
+<h4>Product Return Policy</h4>
+<hr>
+<p>
+    If for any reason you are not satisfied with the Products purchased and you wish to return them, you have up to 7
+    working days following the date you receive the Products to withdraw from the Contract. You shall receive a full
+    refund of the price you paid for the Products (unless otherwise stated below).
+    <br><br>
+    If the Products have been delivered to you and you exercise your right of cancellation, you are responsible for
+    returning the Products as soon as possible and at your own cost. The invoice must be enclosed with the Products
+    returned. You must take reasonable care of the items that you wish to return, and we request that the Products must
+    be returned in the original packaging, in “as new condition”, undamaged and complete (with all component products,
+    parts, accessories, guarantee cards, manuals and other documents and items). To initiate a return, please, contact
+    us. We recommend that you should insure the Products.
+    <br><br>
+    Upon our receipt of the returned Products, we shall issue a refund of the actual amount paid to us, minus any
+    applicable shipping and handling fees or other charges, within a reasonable time by crediting the amount to your
+    relevant credit card. Cash refund, Postal payment order or other methods of refund are not accepted. If you decide
+    to cancel the purchase of the relevant Products as set out in this section and if you fail to return the Products in
+    accordance with these Terms, you may be charged a sum for our direct cost of recovering the Products, and we may
+    deduct that sum from your refund.
+    <br><br>
+    If you return the Products which have been damaged or used, or parts of which, including component products, parts,
+    accessories, packaging, manuals and other documents and/or other items are damaged or missing, we retain the right
+    either to refuse to refund the Product purchase price or to charge you repair, restocking or related fees and
+    delivery charges. In case we reject the returned Products, the Products will be returned to you at your expense. In
+    case we do not reject the returned Products, we may deduct repair, restocking or related fees and delivery charges
+    from any payments to be refunded to you.
+    <br><br>
+    The right of return, i.e. the right of withdrawal from a Contract, shall not apply if you do not purchase the
+    Products as a consumer.
+
+</p>
+
+<h4>Resale</h4>
+<hr>
+<p>
+    Purchases made on our website are intended for end Customers only, and are not authorized for resale. A Customer may
+    not resell the Products, their parts, components or accessories packaged with the Products.
+</p>
+
+<h4>Software Licence</h4>
+<hr>
+<p>
+    The software contained in the hardware Products is licensed and not sold. If you purchase the Products you shall
+    automatically get a license to use a software.
+    <br><br>
+    The software may not be disassembled, decompiled, reverse engineered, merged or combined with any other software,
+    copied, translated, adapted, varied or modified nor may it be distributed in any form. The software is licensed by
+    us on a nonexclusive, non-transferable, single user basis for use only with the accompanying Products.
+    <br><br>
+    If you do not accept the terms of applicable software license, do not place an Order or purchase the Products, or if
+    you already have the Products, return them unused and “as new” in accordance with our return policy.
+
+</p>
+<h4>Intellectual Property Rights</h4>
+<hr>
+<p>
+    All copyright, trademarks or any other intellectual property rights to Products are reserved to Goldee Ltd. and to
+    us.
+    <br><br>
+    You shall not do, or permit to be done, anything that may detrimentally affect our copyright, trademarks or any
+    other intellectual property rights to the Products.
+
+</p>
+
+<h4>Warranties and Disclaimers</h4>
+<hr>
+<p>
+    You acknowledge that the Products are under development, and numerous technical, financial, and practical obstacles
+    may interfere with their delivery to you and with their functioning thereafter. Therefore, the Products are provided
+    "as is" and we and our Products manufacturers disclaim all warranties and conditions of any kind, whether express or
+    implied, with respect to the Products or any other subject matter hereof, including, without limitation, any
+    warranties of merchantability, fitness for a particular purpose. These disclaimers shall not apply to health
+    dangers, life dangers and bodily injuries or as otherwise prohibited by the applicable law.
+</p>
+<h4>Limitation of Liability</h4>
+<hr>
+<p>
+    You expressly understand and agree that, to the maximum extent permitted by the applicable law, we shall not be
+    liable to you or to any other parties under any theory of liability (i) for any indirect, incidental, special,
+    consequential, punitive or exemplary damages, that may be incurred by you in connection with the Products or these
+    Terms, or for any loss of income, profits, bargain, revenue, contracts, goodwill, use, enjoyment, time, data,
+    electronically transmitted orders or other economic advantage, arising from or relating to the Products, even if we
+    have been advised of or should have been aware of the possibility of any such losses arising, except in the event of
+    health dangers, life dangers and bodily injuries. (ii) for inability to order the Products via our website, or
+    damages which occur due to unauthorized access by a third party to your Order.
+    <br><br>
+    You expressly understand and agree that, to the maximum extent permitted by the applicable law, our total liability
+    in connection with the Products or these Terms shall not exceed the amount actually paid by you to us under these
+    Terms.
+
+</p>
+
+<h4>Personal Information</h4>
+<hr>
+<p>
+    By placing an Order, you acknowledge and accept that we may store, process and use personal information collected
+    from your Order Form for the purposes of processing the Order. We may also share such personal information globally
+    with Goldee Ltd. and with other companies that help us provide the Products to you, such as freight carriers and
+    credit card processing companies. We shall protect your personal information in accordance with our Privacy Policy.
+</p>
+<h4>Export Control and responsibility for complying with the applicable laws</h4>
+<hr>
+<p>
+    You acknowledge that the Products listed as items for sale may be subject to export control laws and regulations of
+    jurisdictions, including, but not limited to, the countries of the European Economic Area. You confirm that, should
+    this be the case, you will not export or re-export them in breach of such laws or regulations.
+    <br><br>
+    You are bound to comply with all the applicable laws and regulations of the country to which the Products are
+    destined. We shall not be liable or responsible if you break any such law.
+
+</p>
+
+<h4>Changes to Terms and website</h4>
+<hr>
+<p>
+    We reserve the right to amend these Terms at any time, including payment and warranty terms, without notice, so
+    please review these Terms each time prior to making a purchase of the Products. However, Contracts executed on the
+    basis of previous Terms remain unaffected and Terms, including the Product prices are such, which apply at the time
+    of the Customer’s Order placement.
+    <br><br>
+    Although care is taken to ensure the accuracy of the information on our website, it could include inaccuracies or
+    typographical errors, including pricing errors. We shall not be obliged to honour, nor be liable in respect of, such
+    errors, except for errors concerning characteristics and nature of the Products (i.e. incorrect products
+    specification). In this case at our discretion, we may offer you with the Products which fulfil or are close to the
+    initially described the Products specification (if any).
+    <br><br>
+    We may make improvements and/or changes in Products, prices and other details described in our website, at any time.
+    Changes are periodically made to update our website.
+
+</p>
+
+<h4>Communication and notice</h4>
+<hr>
+<p>
+    You acknowledge and accept that communication with us will be mainly electronic. In addition, you agree that all
+    agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal
+    requirement that such communications be in writing. We will usually contact you by email or provide you with
+    information by posting notice on the our website. By placing an Order, we collect and store your email address. From
+    that point forward, your email address may be used to send you all agreements, notices, disclosures and other
+    communications that we provide to you (referred to as “notices“). We may also give any notices to you at the postal
+    address you provide to us when placing an Order. Notices given by you to us may be given to our email address at
+    info@getgoldee.com or to our postal address Nemcovej 30, Kosice 042 18, Slovakia, European Union. Notices will be
+    deemed received and properly served immediately when posted on our website or 24 hours after an email is sent or day
+    after the date of delivering of any letter. In proving the service of any notices, it will be sufficient to prove,
+    in the case of an email, when such email was sent to the specified email address of the addressee and, in the case
+    of a letter, upon the acknowledgement of delivery being signed by the addressee. We may provide notices to you as
+    required by law or for marketing or other purposes (at our option) to your email address. We are not responsible for
+    any automatic filtering you or your network provider may apply to email notifications.
+
+</p>
+
+<h4>No waiver</h4>
+<hr>
+<p>
+    Omission or delay by us to insist on strict performance of these Terms, or to exercise any right, power or remedy
+    under these Terms shall not constitute a waiver of our rights against you and does not affect our right to require
+    future performance thereof.
+</p>
+
+<h4>Circumstances beyond our reasonable control</h4>
+<hr>
+<p>
+    We shall make every effort to perform our obligations under these Terms. However, we shall not be liable or
+    responsible for any failure to perform, or delay in performance of, any of our obligations under a Contract that is
+    caused by any circumstances beyond our reasonable control, including, without limitation, acts of God, strikes,
+    lock-outs or other industrial action by third parties, civil commotion, riot, terrorist attack, war, fire,
+    explosion, storm, flood, earthquake, epidemic or other natural disaster, failure of public or private
+    telecommunications networks or impossibility of the use of railways, shipping, aircraft, motor transport or other
+    means of public or private transport (e.g. supplier/transport issues) and governmental or regulatory action. In the
+    event of a delay, we shall perform our obligations as soon as reasonably possible.
+
+</p>
+
+<h4>Severability</h4>
+<hr>
+<p>
+    If all or any part of one or more of these Terms is or becomes illegal, invalid, unenforceable, or prohibited in any
+    respect under the applicable law or regulation or found to be illegal or unenforceable in whole or in part under the
+    applicable law, or with respect to a certain category of persons, such provision or part shall, to that extent, be
+    deemed not to form part of the Contract. The legality, validity or enforceability of the remainder of these Terms or
+    the remaining parts of the relevant Term shall not in any way be affected or impaired thereby.
+</p>
+<h4>Governing Law, Jurisdiction</h4>
+<hr>
+<p>
+    The sale of the Products and these Terms shall be governed by and construed in accordance with the laws of Slovakia
+    without giving effect to any conflict of laws principles that may provide the application of the law of another
+    jurisdiction. In addition, Customers agree that any claim, action or dispute arising under or relating to the
+    Contract or these Terms will be submitted to the exclusive jurisdiction of the Courts of Slovakia. In the case that
+    Customers are not from Slovakia they will be subject to the exclusive jurisdiction of the Kosice District Court I.
+    of Slovakia. Nothing in the foregoing will prevent us from bringing an action for infringement of intellectual
+    property rights in any country where such infringement is alleged to occur.
+</p>
+<h4>Contact information</h4>
+<hr>
+<p>
+    Goldee s.r.o. (the "Company") a subsidiary of Goldee Ltd<br>
+    Nemcovej 30, Kosice 042 18, Slovakia, European Union<br>
+    VAT ID: SK2023699139 <br>
+    <a href="mailto:info@getgoldee.com">info@getgoldee.com</a><br>
+    +421 948 620 028<br>
+</p>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+ 
+<script src="./main.js"></script>
+  
+</body>
+</html>
