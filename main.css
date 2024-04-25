@@ -967,16 +967,13 @@ button, input, select {
 .reviews .review2 {
     background: url("./images/review2.png") no-repeat center center
 }
+ 
 
 .reviews .review3 {
-    background: url("./images/review3.png") no-repeat center center
+    background: url("./images/AiForEveryoneLogo.jpg") no-repeat center center
 }
 
 .reviews .review4 {
-    background: url("./images/review4.png") no-repeat center center
-}
-
-.reviews .review5 {
     background: url("./images/review5.png") no-repeat center center
 }
 
